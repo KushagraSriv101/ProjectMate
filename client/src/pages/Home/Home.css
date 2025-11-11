@@ -1,0 +1,137 @@
+/* Global layout */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 60px 80px;
+  background: linear-gradient(180deg, #fff9f3 0%, #f7f7f7 100%);
+  color: #1e293b;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header section */
+.home-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.home-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #475569;
+}
+
+.highlight {
+  color: #f97316; /* warm orange accent */
+  font-weight: 600;
+}
+
+/* Grid layout */
+.home-project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Project cards */
+.home-project-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.home-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(249, 115, 22, 0.2);
+}
+
+/* Project title */
+.home-project-name {
+  color: #f97316; /* warm orange accent */
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+
+/* Divider */
+.home-project-divider {
+  background: #e2e8f0;
+  height: 1px;
+  border: none;
+  margin: 10px 0;
+}
+
+/* Info section */
+.home-project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Status tags */
+.status-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.85rem;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+.status-tag.active {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.status-tag.completed {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.status-tag.pending {
+  background-color: #fef9c3;
+  color: #ca8a04;
+}
+
+/* No projects */
+.home-no-projects {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  padding: 50px 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+.home-no-projects h2 {
+  color: #f97316;
+  margin-bottom: 8px;
+}
+
+/* Global reset */
+body,
+html {
+  background: #fff9f3;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
